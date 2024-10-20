@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #4A90E2;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    flex: 20%;
+    background: #2178dc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+section.main {
+    flex: 80%;
+    background: #fff;
+    min-height: 530px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+footer {
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #999;
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px dotted #444;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-align: left;
+    outline: none;
+    /* Ensures no extra dots */
+}
+
+.menu li::before {
+    content: '';
+    display: none;
+    /* Ensure there are no before pseudo-elements causing dots */
+}
+
+/* Tombol */
+.button {
+    background-color: #4A90E2;
+    /* Warna tombol */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #357ABD;
+    transform: scale(1. 1);
+}
+
+/* Animasi Halus */
+aside,
+section.main {
+    transition: all 0.3s;
+    /* Animasi halus untuk transisi elemen */
+}
