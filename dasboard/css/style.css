@@ -65,13 +65,10 @@ footer {
 .menu li::before {
     content: '';
     display: none;
-    /* Ensure there are no before pseudo-elements causing dots */
 }
 
-/* Tombol */
 .button {
     background-color: #4A90E2;
-    /* Warna tombol */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -85,9 +82,8 @@ footer {
     transform: scale(1. 1);
 }
 
-/* Animasi Halus */
+
 aside,
 section.main {
     transition: all 0.3s;
-    /* Animasi halus untuk transisi elemen */
 }
